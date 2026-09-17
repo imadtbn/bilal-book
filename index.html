@@ -1,720 +1,1819 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ومضة | للكاتب رحيم سيوان</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#0b0a08;
-  --bg2:#12100c;
-  --card:#171410;
-  --gold:#d4a24e;
-  --gold2:#f0c778;
-  --gold3:#8a6a30;
-  --cream:#f5ead5;
-  --muted:#9b8f79;
-  --line:rgba(212,162,78,.18);
-  --shadow:0 25px 60px rgba(0,0,0,.55);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:'Tajawal',sans-serif;
-  background:var(--bg);
-  color:var(--cream);
-  overflow-x:hidden;
-  line-height:1.8;
-}
-::selection{background:var(--gold);color:#0b0a08}
-h1,h2,h3,.amiri{font-family:'Amiri',serif}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأمل | للكاتب عزي صهيب</title>
+  <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4d5.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0a08;
+      --bg2: #12100c;
+      --card: #171410;
+      --gold: #d4a24e;
+      --gold2: #f0c778;
+      --gold3: #8a6a30;
+      --cream: #f5ead5;
+      --muted: #9b8f79;
+      --line: rgba(212, 162, 78, .18);
+      --shadow: 0 25px 60px rgba(0, 0, 0, .55);
+    }
 
-/* ---------- Scrollbar ---------- */
-::-webkit-scrollbar{width:10px}
-::-webkit-scrollbar-track{background:var(--bg)}
-::-webkit-scrollbar-thumb{background:linear-gradient(var(--gold3),var(--gold));border-radius:8px}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-/* ---------- Particles / background ---------- */
-.glow{position:fixed;pointer-events:none;border-radius:50%;filter:blur(120px);opacity:.16;z-index:0}
-.glow.g1{width:520px;height:520px;background:var(--gold);top:-160px;right:-120px}
-.glow.g2{width:460px;height:460px;background:#6b4f1d;bottom:-140px;left:-140px}
+    html {
+      scroll-behavior: smooth
+    }
 
-/* ---------- Navbar ---------- */
-nav{
-  position:fixed;top:0;right:0;left:0;z-index:100;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:18px 6vw;
-  background:rgba(11,10,8,.72);backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--line);
-  transition:.35s;
-}
-nav.scrolled{padding:12px 6vw}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream)}
-.logo .mark{
-  width:44px;height:44px;border-radius:50%;
-  border:1.5px solid var(--gold);
-  display:grid;place-items:center;
-  font-family:'Amiri',serif;font-size:22px;color:var(--gold);
-  box-shadow:0 0 22px rgba(212,162,78,.35);
-}
-.logo b{font-size:22px;font-family:'Amiri',serif;letter-spacing:.5px}
-.logo small{display:block;font-size:11px;color:var(--muted);font-family:'Tajawal';letter-spacing:2px}
-.nav-links{display:flex;gap:30px;list-style:none}
-.nav-links a{
-  color:var(--muted);text-decoration:none;font-size:15px;font-weight:500;
-  position:relative;transition:.3s;
-}
-.nav-links a::after{
-  content:'';position:absolute;bottom:-6px;right:0;width:0;height:2px;
-  background:linear-gradient(90deg,var(--gold2),var(--gold));transition:.35s;border-radius:2px;
-}
-.nav-links a:hover{color:var(--gold2)}
-.nav-links a:hover::after{width:100%}
-.nav-cta{
-  background:linear-gradient(135deg,var(--gold2),var(--gold));
-  color:#1a1206!important;padding:10px 26px;border-radius:40px;
-  font-weight:800;font-size:14px;box-shadow:0 8px 24px rgba(212,162,78,.3);
-}
-.nav-cta::after{display:none}
-.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none}
-.burger span{width:26px;height:2px;background:var(--gold);border-radius:2px;transition:.3s}
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: var(--bg);
+      color: var(--cream);
+      overflow-x: hidden;
+      line-height: 1.8;
+    }
 
-/* ---------- Hero ---------- */
-.hero{
-  min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr;
-  align-items:center;gap:5vw;padding:140px 6vw 80px;position:relative;z-index:1;
-}
-.hero-badge{
-  display:inline-flex;align-items:center;gap:10px;
-  border:1px solid var(--line);border-radius:40px;
-  padding:7px 18px;font-size:13px;color:var(--gold2);margin-bottom:26px;
-  background:rgba(212,162,78,.06);
-}
-.hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block;animation:pulse 1.6s infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
-.hero h1{font-size:clamp(48px,7vw,88px);line-height:1.25;font-weight:700}
-.hero h1 .shine{
-  background:linear-gradient(120deg,var(--gold2) 20%,#fff2cf 40%,var(--gold) 60%);
-  background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
-  animation:shine 4s linear infinite;
-}
-@keyframes shine{to{background-position:200% center}}
-.hero .byline{margin:14px 0 22px;color:var(--muted);font-size:18px}
-.hero .byline b{color:var(--gold2);font-weight:700}
-.hero p.lead{color:#cfc4ae;max-width:560px;font-size:17px;margin-bottom:36px}
-.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
-.btn{
-  display:inline-flex;align-items:center;gap:10px;text-decoration:none;
-  padding:15px 34px;border-radius:50px;font-weight:800;font-size:16px;
-  transition:.35s;cursor:pointer;border:none;font-family:'Tajawal';
-}
-.btn-gold{
-  background:linear-gradient(135deg,var(--gold2),var(--gold));
-  color:#1a1206;box-shadow:0 12px 32px rgba(212,162,78,.35);
-}
-.btn-gold:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(212,162,78,.5)}
-.btn-ghost{border:1.5px solid var(--gold3);color:var(--gold2);background:transparent}
-.btn-ghost:hover{background:rgba(212,162,78,.1);transform:translateY(-4px)}
-.hero-stats{display:flex;gap:44px;margin-top:54px;flex-wrap:wrap}
-.hstat b{display:block;font-size:30px;color:var(--gold2);font-family:'Amiri'}
-.hstat span{color:var(--muted);font-size:13.5px}
+    ::selection {
+      background: var(--gold);
+      color: #0b0a08
+    }
 
-/* ---------- 3D Book ---------- */
-.book-wrap{display:grid;place-items:center;perspective:1400px}
-.book{
-  position:relative;width:300px;height:440px;
-  transform-style:preserve-3d;transform:rotateY(-26deg) rotateX(4deg);
-  transition:transform .8s cubic-bezier(.2,.8,.2,1);
-  filter:drop-shadow(30px 40px 50px rgba(0,0,0,.65));
-  animation:float 6s ease-in-out infinite;
-}
-.book:hover{transform:rotateY(-8deg) rotateX(2deg) scale(1.03)}
-@keyframes float{0%,100%{translate:0 0}50%{translate:0 -16px}}
-.cover{
-  position:absolute;inset:0;border-radius:4px 14px 14px 4px;
-  background:linear-gradient(150deg,#1d1810,#0f0c07 55%,#191309);
-  border:1px solid rgba(212,162,78,.4);
-  display:flex;flex-direction:column;align-items:center;justify-content:space-between;
-  padding:34px 22px;overflow:hidden;
-}
-.cover::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(circle at 70% 18%,rgba(240,199,120,.22),transparent 45%);
-}
-.cover::after{
-  content:'';position:absolute;top:0;bottom:0;right:0;width:26px;
-  background:linear-gradient(90deg,rgba(255,255,255,.14),rgba(0,0,0,.35));
-  transform:translateX(100%) rotateY(90deg);transform-origin:right;
-}
-.cover .top{text-align:center;position:relative}
-.cover .orn{color:var(--gold);font-size:20px;letter-spacing:8px}
-.cover h2{font-size:74px;color:var(--gold2);margin-top:6px;text-shadow:0 0 30px rgba(212,162,78,.5)}
-.cover .sub{color:var(--muted);font-size:13px;letter-spacing:3px;margin-top:4px}
-.cover .burst{
-  width:120px;height:120px;border-radius:50%;margin:14px 0;
-  background:radial-gradient(circle,var(--gold2) 0%,var(--gold) 35%,transparent 72%);
-  filter:blur(2px);opacity:.85;
-  box-shadow:0 0 60px 18px rgba(212,162,78,.35);
-}
-.cover .author{color:var(--cream);font-family:'Amiri';font-size:20px;position:relative}
-.cover .author small{display:block;font-family:'Tajawal';font-size:11px;color:var(--muted);letter-spacing:2px}
-.spine{
-  position:absolute;top:0;bottom:0;right:-15px;width:30px;
-  background:linear-gradient(90deg,#0c0906,#241b0e 50%,#0c0906);
-  transform:rotateY(90deg);transform-origin:right;
-  display:grid;place-items:center;border-radius:0 4px 4px 0;
-}
-.spine span{writing-mode:vertical-rl;font-family:'Amiri';color:var(--gold2);font-size:17px;letter-spacing:4px}
-.pages{position:absolute;top:5px;bottom:5px;left:-10px;width:20px;background:repeating-linear-gradient(90deg,#e8dcc0 0 2px,#c9bc9c 2px 4px);transform:rotateY(90deg);border-radius:2px}
-.price-tag{
-  position:absolute;bottom:34px;right:-8px;z-index:5;
-  background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1206;
-  padding:12px 22px;border-radius:14px;font-weight:900;font-size:20px;
-  box-shadow:0 14px 34px rgba(212,162,78,.45);transform:rotate(6deg);
-  animation:float 6s ease-in-out infinite reverse;
-}
-.price-tag small{display:block;font-size:11px;font-weight:700;opacity:.75}
+    h1,
+    h2,
+    h3,
+    .amiri {
+      font-family: 'Amiri', serif
+    }
 
-/* ---------- Sections common ---------- */
-section{padding:110px 6vw;position:relative;z-index:1}
-.sec-head{text-align:center;max-width:640px;margin:0 auto 64px}
-.sec-head .kicker{color:var(--gold);letter-spacing:4px;font-size:13px;font-weight:700;margin-bottom:12px;display:block}
-.sec-head h2{font-size:clamp(34px,4.5vw,52px);line-height:1.4}
-.sec-head h2 em{color:var(--gold2);font-style:normal}
-.sec-head p{color:var(--muted);margin-top:14px;font-size:16px}
-.divider{width:80px;height:2px;margin:22px auto 0;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    /* ---------- Scrollbar ---------- */
+    ::-webkit-scrollbar {
+      width: 10px
+    }
 
-/* ---------- About Author ---------- */
-#author{background:var(--bg2)}
-.author-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;align-items:center}
-.author-photo{
-  position:relative;border-radius:24px;overflow:hidden;
-  border:1px solid var(--line);box-shadow:var(--shadow);aspect-ratio:4/4.6;
-  background:linear-gradient(160deg,#221a0e,#0d0a06);
-  display:grid;place-items:center;
-}
-.author-photo .ph{
-  width:200px;height:200px;border-radius:50%;
-  border:2px solid var(--gold);
-  display:grid;place-items:center;font-family:'Amiri';font-size:76px;color:var(--gold2);
-  background:radial-gradient(circle at 35% 30%,#3a2c15,#191206);
-  box-shadow:0 0 60px rgba(212,162,78,.3), inset 0 0 40px rgba(0,0,0,.5);
-}
-.author-photo .tag{
-  position:absolute;bottom:20px;right:20px;left:20px;text-align:center;
-  background:rgba(11,10,8,.75);backdrop-filter:blur(8px);
-  border:1px solid var(--line);border-radius:14px;padding:12px;
-  font-family:'Amiri';font-size:19px;color:var(--gold2);
-}
-.author-txt h3{font-size:34px;margin-bottom:6px}
-.author-txt .role{color:var(--gold);font-size:15px;margin-bottom:20px;display:block}
-.author-txt p{color:#cfc4ae;margin-bottom:16px}
-.quote{
-  border-right:3px solid var(--gold);padding:6px 20px;margin:26px 0;
-  font-family:'Amiri';font-size:21px;color:var(--gold2);line-height:2;
-}
-.quote small{font-family:'Tajawal';color:var(--muted);font-size:13px;display:block;margin-top:8px}
-.counters{display:flex;gap:20px;flex-wrap:wrap;margin-top:10px}
-.counter{
-  flex:1;min-width:120px;text-align:center;background:var(--card);
-  border:1px solid var(--line);border-radius:18px;padding:20px 10px;transition:.35s;
-}
-.counter:hover{transform:translateY(-6px);border-color:var(--gold3)}
-.counter b{display:block;font-size:30px;color:var(--gold2);font-family:'Amiri'}
-.counter span{color:var(--muted);font-size:13px}
-.timeline{margin-top:54px;position:relative;padding-right:26px;border-right:2px dashed var(--gold3)}
-.tl-item{position:relative;padding:0 24px 30px 0}
-.tl-item::before{
-  content:'';position:absolute;right:-35px;top:6px;width:16px;height:16px;border-radius:50%;
-  background:var(--bg);border:3px solid var(--gold);box-shadow:0 0 14px rgba(212,162,78,.6);
-}
-.tl-item b{color:var(--gold2);font-size:17px;font-family:'Amiri';font-size:20px}
-.tl-item p{color:var(--muted);font-size:14.5px}
+    ::-webkit-scrollbar-track {
+      background: var(--bg)
+    }
 
-/* ---------- About Book ---------- */
-.book-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center}
-.chapters{display:flex;flex-direction:column;gap:14px;margin-top:30px}
-.chapter{
-  display:flex;gap:18px;align-items:flex-start;background:var(--card);
-  border:1px solid var(--line);border-radius:18px;padding:18px 20px;transition:.35s;
-}
-.chapter:hover{transform:translateX(-8px);border-color:var(--gold3);background:#1c1712}
-.chapter .num{
-  min-width:46px;height:46px;border-radius:12px;display:grid;place-items:center;
-  background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1206;
-  font-weight:900;font-size:18px;
-}
-.chapter h4{font-size:17px;margin-bottom:3px}
-.chapter p{color:var(--muted);font-size:14px}
-.excerpt-card{
-  background:linear-gradient(160deg,#1c160d,#100c07);
-  border:1px solid var(--gold3);border-radius:24px;padding:40px;
-  box-shadow:var(--shadow);position:relative;overflow:hidden;
-}
-.excerpt-card::before{content:'”';position:absolute;top:-30px;left:20px;font-family:'Amiri';font-size:200px;color:rgba(212,162,78,.12)}
-.excerpt-card h3{color:var(--gold2);font-size:24px;margin-bottom:18px}
-.excerpt-card p{font-family:'Amiri';font-size:21px;line-height:2.2;color:#e8dcc0}
-.book-feats{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
-.feat{
-  display:flex;align-items:center;gap:10px;background:rgba(212,162,78,.07);
-  border:1px solid var(--line);padding:10px 18px;border-radius:40px;font-size:14px;color:var(--gold2);
-}
-.feat i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(var(--gold3), var(--gold));
+      border-radius: 8px
+    }
 
-/* ---------- Testimonials ---------- */
-#testimonials{background:var(--bg2)}
-.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
-.t-card{
-  background:var(--card);border:1px solid var(--line);border-radius:22px;
-  padding:30px;position:relative;transition:.4s;
-}
-.t-card:hover{transform:translateY(-10px);border-color:var(--gold3);box-shadow:0 24px 50px rgba(0,0,0,.45)}
-.t-card .stars{color:var(--gold);font-size:18px;letter-spacing:3px;margin-bottom:16px}
-.t-card p{color:#d8cdb6;font-size:15px;margin-bottom:22px;min-height:110px}
-.t-who{display:flex;align-items:center;gap:14px;border-top:1px solid var(--line);padding-top:18px}
-.t-ava{
-  width:48px;height:48px;border-radius:50%;display:grid;place-items:center;
-  font-weight:900;color:#1a1206;font-size:18px;
-  background:linear-gradient(135deg,var(--gold2),var(--gold3));
-}
-.t-who b{display:block;font-size:15px}
-.t-who span{color:var(--muted);font-size:12.5px}
-.t-badge{position:absolute;top:22px;left:22px;font-size:11px;color:var(--gold);border:1px solid var(--gold3);padding:4px 12px;border-radius:20px;background:rgba(212,162,78,.07)}
+    /* ---------- Background glow ---------- */
+    .glow {
+      position: fixed;
+      pointer-events: none;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: .16;
+      z-index: 0
+    }
 
-/* ---------- Order ---------- */
-.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:start}
-.order-info h2{font-size:clamp(32px,4vw,46px);line-height:1.4;margin-bottom:18px}
-.order-info h2 em{color:var(--gold2);font-style:normal}
-.order-info p{color:var(--muted);margin-bottom:26px}
-.order-price{
-  display:flex;align-items:baseline;gap:14px;background:var(--card);
-  border:1px solid var(--line);border-radius:18px;padding:22px 26px;margin-bottom:24px;
-}
-.order-price .now{font-size:42px;font-weight:900;color:var(--gold2)}
-.order-price .old{color:var(--muted);text-decoration:line-through;font-size:20px}
-.order-price .off{background:var(--gold);color:#1a1206;font-size:12px;font-weight:800;padding:4px 12px;border-radius:20px}
-.perks{list-style:none;display:flex;flex-direction:column;gap:12px}
-.perks li{display:flex;gap:12px;align-items:center;color:#cfc4ae;font-size:15px}
-.perks li svg{flex:none}
-form.order-form{
-  background:var(--card);border:1px solid var(--line);border-radius:26px;
-  padding:38px;box-shadow:var(--shadow);
-}
-.order-form h3{font-size:24px;color:var(--gold2);margin-bottom:6px}
-.order-form .sub{color:var(--muted);font-size:14px;margin-bottom:26px}
-.field{margin-bottom:18px}
-.field label{display:block;font-size:14px;color:var(--muted);margin-bottom:8px}
-.field input,.field select,.field textarea{
-  width:100%;background:#0f0d09;border:1px solid var(--line);border-radius:14px;
-  padding:14px 16px;color:var(--cream);font-family:'Tajawal';font-size:15px;transition:.3s;
-}
-.field input:focus,.field select:focus,.field textarea:focus{
-  outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(212,162,78,.12);
-}
-.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.total-row{
-  display:flex;justify-content:space-between;align-items:center;
-  border-top:1px dashed var(--gold3);margin:22px 0;padding-top:18px;font-size:16px;
-}
-.total-row b{color:var(--gold2);font-size:26px}
-form.order-form .btn{width:100%;justify-content:center;font-size:17px}
-.form-note{text-align:center;color:var(--muted);font-size:12.5px;margin-top:14px}
+    .glow.g1 {
+      width: 520px;
+      height: 520px;
+      background: var(--gold);
+      top: -160px;
+      right: -120px
+    }
 
-/* ---------- Contact ---------- */
-#contact{background:var(--bg2)}
-.c-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;max-width:1000px;margin:0 auto}
-.c-card{
-  background:var(--card);border:1px solid var(--line);border-radius:20px;
-  padding:32px 26px;text-align:center;transition:.35s;text-decoration:none;display:block;
-}
-.c-card:hover{transform:translateY(-8px);border-color:var(--gold3)}
-.c-ico{
-  width:58px;height:58px;margin:0 auto 18px;border-radius:16px;display:grid;place-items:center;
-  background:rgba(212,162,78,.1);border:1px solid var(--gold3);
-}
-.c-card b{display:block;font-size:17px;margin-bottom:6px;color:var(--cream)}
-.c-card span{color:var(--muted);font-size:14px;direction:ltr;display:inline-block}
-.socials{display:flex;justify-content:center;gap:14px;margin-top:40px}
-.soc{
-  width:50px;height:50px;border-radius:50%;display:grid;place-items:center;
-  border:1px solid var(--gold3);color:var(--gold2);transition:.3s;
-}
-.soc:hover{background:var(--gold);color:#1a1206;transform:translateY(-5px)}
+    .glow.g2 {
+      width: 460px;
+      height: 460px;
+      background: #6b4f1d;
+      bottom: -140px;
+      left: -140px
+    }
 
-/* ---------- Footer ---------- */
-footer{border-top:1px solid var(--line);padding:44px 6vw;text-align:center;color:var(--muted);font-size:14px;position:relative;z-index:1}
-footer b{color:var(--gold2);font-family:'Amiri'}
-footer .dev{margin-top:8px;font-size:12.5px}
+    /* ---------- Navbar ---------- */
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 6vw;
+      background: rgba(11, 10, 8, .72);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+      transition: .35s;
+    }
 
-/* ---------- Reveal animations ---------- */
-.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
-.reveal.in{opacity:1;transform:none}
+    nav.scrolled {
+      padding: 12px 6vw
+    }
 
-/* ---------- Responsive ---------- */
-@media(max-width:980px){
-  .hero{grid-template-columns:1fr;text-align:center;padding-top:130px}
-  .hero p.lead{margin-inline:auto}
-  .hero-btns,.hero-stats{justify-content:center}
-  .book-wrap{margin-top:50px}
-  .author-grid,.book-grid,.order-grid{grid-template-columns:1fr}
-  .nav-links{
-    position:fixed;inset:0 0 0 30%;flex-direction:column;justify-content:center;gap:34px;
-    background:rgba(11,10,8,.97);backdrop-filter:blur(16px);
-    transform:translateX(100%);transition:.45s;z-index:99;
-  }
-  .nav-links.open{transform:none}
-  .nav-links a{font-size:20px}
-  .burger{display:flex;z-index:100}
-  .f-row{grid-template-columns:1fr}
-}
-</style>
-<base target="_blank">
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--cream)
+    }
+
+    .logo .mark-img {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1.5px solid var(--gold);
+      padding: 5px;
+      background: #171206;
+      object-fit: contain;
+      box-shadow: 0 0 22px rgba(212, 162, 78, .35);
+    }
+
+    .logo b {
+      font-size: 22px;
+      font-family: 'Amiri', serif;
+      letter-spacing: .5px
+    }
+
+    .logo small {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      font-family: 'Tajawal';
+      letter-spacing: 2px
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      position: relative;
+      transition: .3s;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold2), var(--gold));
+      transition: .35s;
+      border-radius: 2px;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold2)
+    }
+
+    .nav-links a:hover::after {
+      width: 100%
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold2), var(--gold));
+      color: #1a1206 !important;
+      padding: 10px 26px;
+      border-radius: 40px;
+      font-weight: 800;
+      font-size: 14px;
+      box-shadow: 0 8px 24px rgba(212, 162, 78, .3);
+    }
+
+    .nav-cta::after {
+      display: none
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none
+    }
+
+    .burger span {
+      width: 26px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 2px;
+      transition: .3s
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 5vw;
+      padding: 140px 6vw 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 40px;
+      padding: 7px 18px;
+      font-size: 13px;
+      color: var(--gold2);
+      margin-bottom: 26px;
+      background: rgba(212, 162, 78, .06);
+    }
+
+    .hero-badge i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: inline-block;
+      animation: pulse 1.6s infinite
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: .35;
+        transform: scale(.7)
+      }
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 7vw, 88px);
+      line-height: 1.25;
+      font-weight: 700
+    }
+
+    .hero h1 .shine {
+      background: linear-gradient(120deg, var(--gold2) 20%, #fff2cf 40%, var(--gold) 60%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: shine 4s linear infinite;
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 200% center
+      }
+    }
+
+    .hero .byline {
+      margin: 14px 0 22px;
+      color: var(--muted);
+      font-size: 18px
+    }
+
+    .hero .byline b {
+      color: var(--gold2);
+      font-weight: 700
+    }
+
+    .hero p.lead {
+      color: #cfc4ae;
+      max-width: 560px;
+      font-size: 17px;
+      margin-bottom: 36px
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      padding: 15px 34px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 16px;
+      transition: .35s;
+      cursor: pointer;
+      border: none;
+      font-family: 'Tajawal';
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold2), var(--gold));
+      color: #1a1206;
+      box-shadow: 0 12px 32px rgba(212, 162, 78, .35);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 44px rgba(212, 162, 78, .5)
+    }
+
+    .btn-wa {
+      background: #25D366;
+      color: #fff;
+      box-shadow: 0 12px 32px rgba(37, 211, 102, .3);
+    }
+
+    .btn-wa:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 44px rgba(37, 211, 102, .45)
+    }
+
+    .btn-ghost {
+      border: 1.5px solid var(--gold3);
+      color: var(--gold2);
+      background: transparent
+    }
+
+    .btn-ghost:hover {
+      background: rgba(212, 162, 78, .1);
+      transform: translateY(-4px)
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 44px;
+      margin-top: 54px;
+      flex-wrap: wrap
+    }
+
+    .hstat b {
+      display: block;
+      font-size: 30px;
+      color: var(--gold2);
+      font-family: 'Amiri'
+    }
+
+    .hstat span {
+      color: var(--muted);
+      font-size: 13.5px
+    }
+
+    /* ---------- 3D Book ---------- */
+    .book-wrap {
+      display: grid;
+      place-items: center;
+      perspective: 1400px
+    }
+
+    .book {
+      position: relative;
+      width: 300px;
+      height: 440px;
+      transform-style: preserve-3d;
+      transform: rotateY(-26deg) rotateX(4deg);
+      transition: transform .8s cubic-bezier(.2, .8, .2, 1);
+      filter: drop-shadow(30px 40px 50px rgba(0, 0, 0, .65));
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .book:hover {
+      transform: rotateY(-8deg) rotateX(2deg) scale(1.03)
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        translate: 0 0
+      }
+
+      50% {
+        translate: 0 -16px
+      }
+    }
+
+    .cover {
+      position: absolute;
+      inset: 0;
+      border-radius: 4px 14px 14px 4px;
+      background: linear-gradient(150deg, #1d1810, #0f0c07 55%, #191309);
+      border: 1px solid rgba(212, 162, 78, .4);
+      overflow: hidden;
+    }
+
+    .cover-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      border-radius: inherit;
+    }
+
+    .cover-overlay {
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 18px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .62) 0%, rgba(0, 0, 0, .1) 28%, transparent 50%, rgba(0, 0, 0, .05) 62%, rgba(0, 0, 0, .88) 100%);
+    }
+
+    .cover-overlay .orn {
+      color: var(--gold2);
+      font-size: 18px;
+      letter-spacing: 8px;
+      text-shadow: 0 0 14px rgba(212, 162, 78, .8)
+    }
+
+    .cover-overlay h2 {
+      font-size: 66px;
+      color: var(--gold2);
+      text-shadow: 0 0 30px rgba(212, 162, 78, .6);
+      line-height: 1.2;
+      margin-top: 2px
+    }
+
+    .cover-overlay .sub {
+      color: #e8dcc0;
+      font-size: 12.5px;
+      letter-spacing: 3px;
+      margin-top: 4px
+    }
+
+    .cover-overlay .author {
+      color: var(--cream);
+      font-family: 'Amiri';
+      font-size: 20px
+    }
+
+    .cover-overlay .author small {
+      display: block;
+      font-family: 'Tajawal';
+      font-size: 11px;
+      color: #cbbd9e;
+      letter-spacing: 2px
+    }
+
+    .cover::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 26px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, .14), rgba(0, 0, 0, .35));
+      transform: translateX(100%) rotateY(90deg);
+      transform-origin: right;
+    }
+
+    .spine {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -15px;
+      width: 30px;
+      background: linear-gradient(90deg, #0c0906, #241b0e 50%, #0c0906);
+      transform: rotateY(90deg);
+      transform-origin: right;
+      display: grid;
+      place-items: center;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .spine span {
+      writing-mode: vertical-rl;
+      font-family: 'Amiri';
+      color: var(--gold2);
+      font-size: 17px;
+      letter-spacing: 4px
+    }
+
+    .pages {
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: -10px;
+      width: 20px;
+      background: repeating-linear-gradient(90deg, #e8dcc0 0 2px, #c9bc9c 2px 4px);
+      transform: rotateY(90deg);
+      border-radius: 2px
+    }
+
+    .price-tag {
+      position: absolute;
+      bottom: 34px;
+      right: -8px;
+      z-index: 5;
+      background: linear-gradient(135deg, var(--gold2), var(--gold));
+      color: #1a1206;
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-weight: 900;
+      font-size: 20px;
+      box-shadow: 0 14px 34px rgba(212, 162, 78, .45);
+      transform: rotate(6deg);
+      animation: float 6s ease-in-out infinite reverse;
+    }
+
+    .price-tag small {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      opacity: .75
+    }
+
+    /* ---------- Sections common ---------- */
+    section {
+      padding: 110px 6vw;
+      position: relative;
+      z-index: 1
+    }
+
+    .sec-head {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 64px
+    }
+
+    .sec-head .kicker {
+      color: var(--gold);
+      letter-spacing: 4px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: block
+    }
+
+    .sec-head h2 {
+      font-size: clamp(34px, 4.5vw, 52px);
+      line-height: 1.4
+    }
+
+    .sec-head h2 em {
+      color: var(--gold2);
+      font-style: normal
+    }
+
+    .sec-head p {
+      color: var(--muted);
+      margin-top: 14px;
+      font-size: 16px
+    }
+
+    .divider {
+      width: 80px;
+      height: 2px;
+      margin: 22px auto 0;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent)
+    }
+
+    /* ---------- About Author ---------- */
+    #author {
+      background: var(--bg2)
+    }
+
+    .author-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 6vw;
+      align-items: center
+    }
+
+    .author-photo {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      aspect-ratio: 4/4.6;
+      background: linear-gradient(160deg, #221a0e, #0d0a06);
+    }
+
+    .author-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: .6s
+    }
+
+    .author-photo:hover img {
+      transform: scale(1.05)
+    }
+
+    .author-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 55%, rgba(11, 10, 8, .88));
+      pointer-events: none;
+    }
+
+    .author-photo .tag {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      left: 20px;
+      z-index: 2;
+      text-align: center;
+      background: rgba(11, 10, 8, .75);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      font-family: 'Amiri';
+      font-size: 19px;
+      color: var(--gold2);
+    }
+
+    .author-txt h3 {
+      font-size: 34px;
+      margin-bottom: 6px
+    }
+
+    .author-txt .role {
+      color: var(--gold);
+      font-size: 15px;
+      margin-bottom: 20px;
+      display: block
+    }
+
+    .author-txt p {
+      color: #cfc4ae;
+      margin-bottom: 16px
+    }
+
+    .quote {
+      border-right: 3px solid var(--gold);
+      padding: 6px 20px;
+      margin: 26px 0;
+      font-family: 'Amiri';
+      font-size: 21px;
+      color: var(--gold2);
+      line-height: 2;
+    }
+
+    .quote small {
+      font-family: 'Tajawal';
+      color: var(--muted);
+      font-size: 13px;
+      display: block;
+      margin-top: 8px
+    }
+
+    .counters {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px
+    }
+
+    .counter {
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 10px;
+      transition: .35s;
+    }
+
+    .counter:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold3)
+    }
+
+    .counter b {
+      display: block;
+      font-size: 30px;
+      color: var(--gold2);
+      font-family: 'Amiri'
+    }
+
+    .counter span {
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .timeline {
+      margin-top: 54px;
+      position: relative;
+      padding-right: 26px;
+      border-right: 2px dashed var(--gold3)
+    }
+
+    .tl-item {
+      position: relative;
+      padding: 0 24px 30px 0
+    }
+
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      right: -35px;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 3px solid var(--gold);
+      box-shadow: 0 0 14px rgba(212, 162, 78, .6);
+    }
+
+    .tl-item b {
+      color: var(--gold2);
+      font-size: 20px;
+      font-family: 'Amiri'
+    }
+
+    .tl-item p {
+      color: var(--muted);
+      font-size: 14.5px
+    }
+
+    /* ---------- About Book ---------- */
+    .book-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 6vw;
+      align-items: center
+    }
+
+    .chapters {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 30px
+    }
+
+    .chapter {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 20px;
+      transition: .35s;
+    }
+
+    .chapter:hover {
+      transform: translateX(-8px);
+      border-color: var(--gold3);
+      background: #1c1712
+    }
+
+    .chapter .num {
+      min-width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--gold2), var(--gold));
+      color: #1a1206;
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .chapter h4 {
+      font-size: 17px;
+      margin-bottom: 3px
+    }
+
+    .chapter p {
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    .excerpt-card {
+      background: linear-gradient(160deg, #1c160d, #100c07);
+      border: 1px solid var(--gold3);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .excerpt-card::before {
+      content: '”';
+      position: absolute;
+      top: -30px;
+      left: 20px;
+      font-family: 'Amiri';
+      font-size: 200px;
+      color: rgba(212, 162, 78, .12)
+    }
+
+    .excerpt-card h3 {
+      color: var(--gold2);
+      font-size: 24px;
+      margin-bottom: 18px
+    }
+
+    .excerpt-card p {
+      font-family: 'Amiri';
+      font-size: 21px;
+      line-height: 2.2;
+      color: #e8dcc0
+    }
+
+    .book-feats {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 26px
+    }
+
+    .feat {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(212, 162, 78, .07);
+      border: 1px solid var(--line);
+      padding: 10px 18px;
+      border-radius: 40px;
+      font-size: 14px;
+      color: var(--gold2);
+    }
+
+    .feat i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 10px var(--gold)
+    }
+
+    /* ---------- Testimonials ---------- */
+    #testimonials {
+      background: var(--bg2)
+    }
+
+    .t-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 26px
+    }
+
+    .t-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 30px;
+      position: relative;
+      transition: .4s;
+    }
+
+    .t-card:hover {
+      transform: translateY(-10px);
+      border-color: var(--gold3);
+      box-shadow: 0 24px 50px rgba(0, 0, 0, .45)
+    }
+
+    .t-card .stars {
+      color: var(--gold);
+      font-size: 18px;
+      letter-spacing: 3px;
+      margin-bottom: 16px
+    }
+
+    .t-card p {
+      color: #d8cdb6;
+      font-size: 15px;
+      margin-bottom: 22px;
+      min-height: 110px
+    }
+
+    .t-who {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px
+    }
+
+    .t-ava {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      color: #1a1206;
+      font-size: 18px;
+      background: linear-gradient(135deg, var(--gold2), var(--gold3));
+    }
+
+    .t-who b {
+      display: block;
+      font-size: 15px
+    }
+
+    .t-who span {
+      color: var(--muted);
+      font-size: 12.5px
+    }
+
+    .t-badge {
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      font-size: 11px;
+      color: var(--gold);
+      border: 1px solid var(--gold3);
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(212, 162, 78, .07)
+    }
+
+    /* ---------- Order ---------- */
+    .order-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5vw;
+      align-items: start
+    }
+
+    .order-info h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.4;
+      margin-bottom: 18px
+    }
+
+    .order-info h2 em {
+      color: var(--gold2);
+      font-style: normal
+    }
+
+    .order-info p {
+      color: var(--muted);
+      margin-bottom: 26px
+    }
+
+    .order-price {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px 26px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .order-price .now {
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--gold2)
+    }
+
+    .order-price .old {
+      color: var(--muted);
+      text-decoration: line-through;
+      font-size: 20px
+    }
+
+    .order-price .off {
+      background: var(--gold);
+      color: #1a1206;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 20px
+    }
+
+    .perks {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .perks li {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      color: #cfc4ae;
+      font-size: 15px
+    }
+
+    .perks li svg {
+      flex: none
+    }
+
+    form.order-form {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 38px;
+      box-shadow: var(--shadow);
+    }
+
+    .order-form h3 {
+      font-size: 24px;
+      color: var(--gold2);
+      margin-bottom: 6px
+    }
+
+    .order-form .sub {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 26px
+    }
+
+    .field {
+      margin-bottom: 18px
+    }
+
+    .field label {
+      display: block;
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 8px
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      background: #0f0d09;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: var(--cream);
+      font-family: 'Tajawal';
+      font-size: 15px;
+      transition: .3s;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(212, 162, 78, .12);
+    }
+
+    .f-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px
+    }
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px dashed var(--gold3);
+      margin: 22px 0;
+      padding-top: 18px;
+      font-size: 16px;
+    }
+
+    .total-row b {
+      color: var(--gold2);
+      font-size: 26px
+    }
+
+    form.order-form .btn {
+      width: 100%;
+      justify-content: center;
+      font-size: 17px
+    }
+
+    .form-note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-top: 14px
+    }
+
+    /* ---------- Contact ---------- */
+    #contact {
+      background: var(--bg2)
+    }
+
+    .c-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      max-width: 1000px;
+      margin: 0 auto
+    }
+
+    .c-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 32px 26px;
+      text-align: center;
+      transition: .35s;
+      text-decoration: none;
+      display: block;
+    }
+
+    .c-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--gold3)
+    }
+
+    .c-ico {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 18px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(212, 162, 78, .1);
+      border: 1px solid var(--gold3);
+    }
+
+    .c-card b {
+      display: block;
+      font-size: 17px;
+      margin-bottom: 6px;
+      color: var(--cream)
+    }
+
+    .c-card span {
+      color: var(--muted);
+      font-size: 14px;
+      direction: ltr;
+      display: inline-block
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 40px
+    }
+
+    .soc {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold3);
+      color: var(--gold2);
+      transition: .3s;
+    }
+
+    .soc:hover {
+      background: var(--gold);
+      color: #1a1206;
+      transform: translateY(-5px)
+    }
+
+    /* ---------- Floating WhatsApp ---------- */
+    .wa-float {
+      position: fixed;
+      bottom: 26px;
+      left: 26px;
+      z-index: 150;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, .45);
+      transition: .3s;
+      animation: waPulse 2.4s infinite;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.12)
+    }
+
+    @keyframes waPulse {
+
+      0%,
+      100% {
+        box-shadow: 0 10px 30px rgba(37, 211, 102, .45), 0 0 0 0 rgba(37, 211, 102, .5)
+      }
+
+      50% {
+        box-shadow: 0 10px 30px rgba(37, 211, 102, .45), 0 0 0 16px rgba(37, 211, 102, 0)
+      }
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 44px 6vw;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      position: relative;
+      z-index: 1
+    }
+
+    footer b {
+      color: var(--gold2);
+      font-family: 'Amiri'
+    }
+
+    footer .dev {
+      margin-top: 8px;
+      font-size: 12.5px
+    }
+
+    /* ---------- Reveal animations ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity .8s ease, transform .8s ease
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none
+    }
+
+    /* ---------- Responsive ---------- */
+    @media(max-width:980px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 130px
+      }
+
+      .hero p.lead {
+        margin-inline: auto
+      }
+
+      .hero-btns,
+      .hero-stats {
+        justify-content: center
+      }
+
+      .book-wrap {
+        margin-top: 50px
+      }
+
+      .author-grid,
+      .book-grid,
+      .order-grid {
+        grid-template-columns: 1fr
+      }
+
+      .nav-links {
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 34px;
+        background: rgba(11, 10, 8, .97);
+        backdrop-filter: blur(16px);
+        transform: translateX(100%);
+        transition: .45s;
+        z-index: 99;
+      }
+
+      .nav-links.open {
+        transform: none
+      }
+
+      .nav-links a {
+        font-size: 20px
+      }
+
+      .burger {
+        display: flex;
+        z-index: 100
+      }
+
+      .f-row {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+  <base target="_blank">
 </head>
+
 <body>
 
-<div class="glow g1"></div>
-<div class="glow g2"></div>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
 
-<!-- ===== Navbar ===== -->
-<nav id="nav">
-  <a href="#home" class="logo">
-    <span class="mark">و</span>
-    <span><b>ومضة</b><small>WAMDA · NOVEL</small></span>
-  </a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#home">الرئيسية</a></li>
-    <li><a href="#author">عن الكاتب</a></li>
-    <li><a href="#book">عن الكتاب</a></li>
-    <li><a href="#testimonials">آراء القراء</a></li>
-    <li><a href="#contact">اتصل بنا</a></li>
-    <li><a href="#order" class="nav-cta">اطلب نسختك</a></li>
-  </ul>
-  <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
-</nav>
+  <!-- ===== Navbar ===== -->
+  <nav id="nav">
+    <a href="#home" class="logo">
+      <img class="mark-img" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4d5.png"
+        alt="أيقونة موقع ">
+      <span><b>رواية الأمل</b><small>SOHIB · BOOK</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#author">عن الكاتب</a></li>
+      <li><a href="#book">عن الكتاب</a></li>
+      <li><a href="#testimonials">آراء القراء</a></li>
+      <li><a href="#contact">اتصل بنا</a></li>
+      <li><a href="#order" class="nav-cta">اطلب نسختك</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+  </nav>
 
-<!-- ===== Hero ===== -->
-<header class="hero" id="home">
-  <div class="hero-txt reveal">
-    <span class="hero-badge"><i></i> الإصدار الأول · متوفر الآن</span>
-    <h1>رواية <span class="shine">«ومضة»</span><br>حين يلتقي الصوتُ بالمعنى</h1>
-    <div class="byline">بقلم الكاتب <b>رحيم سيوان</b></div>
-    <p class="lead">رحلة أدبية مذهلة تدمج الفلسفة العميقة بالسرد الدرامي؛ نصوصٌ تحاكي الروح، وقصةٌ تُعيد لك إيمانك بأن الكلمة قادرة على تغيير الحياة. لا تكتفي بأن تُقرأ… بل تُعاش.</p>
-    <div class="hero-btns">
-      <a href="#order" class="btn btn-gold">📖 اطلب نسختك الآن</a>
-      <a href="#book" class="btn btn-ghost">اكتشف المزيد</a>
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="home">
+    <div class="hero-txt reveal">
+      <span class="hero-badge"><i></i> الإصدار الأول · متوفر الآن</span>
+      <h1>رواية <span class="shine">«الأمل»</span><br>حين يلتقي الصوتُ بالمعنى</h1>
+      <div class="byline">بقلم الكاتب <b>عزي صهيب</b></div>
+      <p class="lead">رحلة أدبية مذهلة تدمج الفلسفة العميقة بالسرد الدرامي؛ نصوصٌ تحاكي الروح، وقصةٌ تُعيد لك إيمانك بأن
+        الكلمة قادرة على تغيير الحياة. لا تكتفي بأن تُقرأ… بل تُعاش.</p>
+      <div class="hero-btns">
+        <a href="#order" class="btn btn-gold">📖 اطلب نسختك الآن</a>
+        <a href="https://wa.me/213697743721?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D8%AA%D8%A7%D8%A8%20%C2%AB%D9%88%D9%85%D8%B6%D8%A9%C2%BB"
+          target="_blank" class="btn btn-wa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3z" />
+          </svg>
+          راسلنا واتساب
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b>+265K</b><span>قارئ ومتابع</span></div>
+        <div class="hstat"><b>+4,500</b><span>نسخة مباعة</span></div>
+        <div class="hstat"><b>★ 4.9</b><span>تقييم القراء</span></div>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div class="hstat"><b>+265K</b><span>قارئ ومتابع</span></div>
-      <div class="hstat"><b>+4,500</b><span>نسخة مباعة</span></div>
-      <div class="hstat"><b>★ 4.9</b><span>تقييم القراء</span></div>
-    </div>
-  </div>
-  <div class="book-wrap reveal">
-    <div class="book">
-      <div class="cover">
-        <div class="top">
-          <div class="orn">✦ ✦ ✦</div>
-          <h2>ومضة</h2>
-          <div class="sub">رواية فلسفية درامية</div>
+    <div class="book-wrap reveal">
+      <div class="book">
+        <div class="cover">
+          <img class="cover-img"
+            src="https://kimi-web-img.kimi.ai/img/www.shutterstock.com/8afd3e090ea38b35d1611bcc4b63b5e6e08ebf83.jpg"
+            alt="غلاف رواية الأمل">
+          <div class="cover-overlay">
+            <div>
+              <div class="orn">✦ ✦ ✦</div>
+              <h2>الأمل</h2>
+              <div class="sub">رواية فلسفية درامية</div>
+            </div>
+            <div class="author">عزي صهيب<small>إصدار دار السهوب</small></div>
+          </div>
         </div>
-        <div class="burst"></div>
-        <div class="author">رحيم سيوان<small>إصدار دار السهوب</small></div>
+        <div class="spine"><span>الأمل · عزي صهيب</span></div>
+        <div class="pages"></div>
       </div>
-      <div class="spine"><span>ومضة · رحيم سيوان</span></div>
-      <div class="pages"></div>
+      <div class="price-tag">1,200 دج<small>بدل التوصيل مجاني</small></div>
     </div>
-    <div class="price-tag">1,200 دج<small>بدل التوصيل مجاني</small></div>
-  </div>
-</header>
+  </header>
 
-<!-- ===== About Author ===== -->
-<section id="author">
-  <div class="sec-head reveal">
-    <span class="kicker">✦ المؤلف ✦</span>
-    <h2>عن <em>الكاتب</em></h2>
-    <div class="divider"></div>
-  </div>
-  <div class="author-grid">
-    <div class="author-photo reveal">
-      <div class="ph">ر</div>
-      <div class="tag">رحيم سيوان — الكاتب والباحث</div>
+  <!-- ===== About Author ===== -->
+  <section id="author">
+    <div class="sec-head reveal">
+      <span class="kicker">✦ المؤلف ✦</span>
+      <h2>عن <em>الكاتب</em></h2>
+      <div class="divider"></div>
     </div>
-    <div class="author-txt reveal">
-      <h3>رحيم سيوان</h3>
-      <span class="role">كاتب وباحث في التنمية البشرية والإبداع</span>
-      <p>كاتب وباحث في التنمية البشرية والإبداع، يدمج بين الفلسفة العميقة والسرد الدرامي ليخلق نصوصاً تحاكي الروح. بدأ رحلته الرقمية عام 2019 بمقالات في فلسفة التغيير الإيجابي وبناء الذات، حتى أصبح صوتاً يتابعه مئات الآلاف.</p>
-      <div class="quote">
-        «الكلمة أمانة، والصدق فيها هو الومضة التي تبقى حين يرحل كل شيء»
-        <small>— رحيم سيوان</small>
+    <div class="author-grid">
+      <div class="author-photo reveal">
+        <img src="https://kimi-web-img.kimi.ai/img/media.istockphoto.com/e064b1ba56c77dbb8d9317f41849fd7ab3ea65b9.jpg"
+          alt="الكاتب عزي صهيب">
+        <div class="tag">عزي صهيب — الكاتب والباحث</div>
       </div>
-      <div class="counters">
-        <div class="counter"><b>265K</b><span>متابع وقارئ</span></div>
-        <div class="counter"><b>295</b><span>مقال ومنشور</span></div>
-        <div class="counter"><b>4,531</b><span>عضو نشط</span></div>
-      </div>
-      <div class="timeline">
-        <div class="tl-item"><b>2019 · البدايات الأولى</b><p>سلسلة من المقالات العميقة في فلسفة التغيير الإيجابي وبناء الذات.</p></div>
-        <div class="tl-item"><b>2021 · مائة ألف صوت</b><p>نقطة التحول الكبرى في الرحلة الرقمية، حيث تلاقت الكلمات مع عقول القراء.</p></div>
-        <div class="tl-item"><b>2023 · جائزة التميز الأدبي</b><p>تكريم مستحق في المحافل الثقافية الوطنية تقديراً للتأثير الفكري.</p></div>
-        <div class="tl-item"><b>2025 · إصدار رواية «ومضة»</b><p>المولود الأدبي الأول، إشراقة دار السهوب التي تجسد خلاصة الفكر والدراما.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== About Book ===== -->
-<section id="book">
-  <div class="sec-head reveal">
-    <span class="kicker">✦ الكتاب ✦</span>
-    <h2>لماذا <em>«ومضة»</em>؟</h2>
-    <p>أكثر من مجرد رواية… تجربة تأملية تأخذك في رحلة داخل الذات</p>
-    <div class="divider"></div>
-  </div>
-  <div class="book-grid">
-    <div class="reveal">
-      <div class="excerpt-card">
-        <h3>ومضة من بين السطور</h3>
-        <p>«في لحظة الصمت تلك، أدرك أن النور لا يأتي ممن حولنا… بل من تلك الومضة الصغيرة التي تشتعل في داخلنا كلما آمنّا بأن الغد يستحق أن نُضيئه. لم يكن الطريق طويلاً، كان فقط ينتظر من يجرؤ على أخذ الخطوة الأولى.»</p>
-      </div>
-      <div class="book-feats">
-        <span class="feat"><i></i> 240 صفحة فاخرة</span>
-        <span class="feat"><i></i> غلاف مقوّى</span>
-        <span class="feat"><i></i> ورق شاموا ممتاز</span>
-        <span class="feat"><i></i> إهداء مميّز للكاتب</span>
-      </div>
-    </div>
-    <div class="reveal">
-      <h3 style="font-size:26px;margin-bottom:8px">ماذا ستجد داخل الكتاب؟</h3>
-      <p style="color:var(--muted)">ثلاثة أبواب تأخذك من الظلام إلى الومضة…</p>
-      <div class="chapters">
-        <div class="chapter">
-          <div class="num">1</div>
-          <div><h4>العتمة الأولى</h4><p>رحلة البطل في متاهة اليومي، حيث تتلاشى الأحلام وتُمحى المعاني.</p></div>
+      <div class="author-txt reveal">
+        <h3>عزي صهيب</h3>
+        <span class="role">كاتب وباحث في التنمية البشرية والإبداع</span>
+        <p>كاتب وباحث في التنمية البشرية والإبداع، يدمج بين الفلسفة العميقة والسرد الدرامي ليخلق نصوصاً تحاكي الروح. بدأ
+          رحلته الرقمية عام 2019 بمقالات في فلسفة التغيير الإيجابي وبناء الذات، حتى أصبح صوتاً يتابعه مئات الآلاف.</p>
+        <div class="quote">
+          «الكلمة أمانة، والصدق فيها هو الالأمل التي تبقى حين يرحل كل شيء»
+          <small>— عزي صهيب</small>
         </div>
-        <div class="chapter">
-          <div class="num">2</div>
-          <div><h4>حين يتكلم الصدى</h4><p>لقاءاتٌ غيّرت كل شيء؛ حكم وفلسفات تُعيد تشكيل النظر إلى الذات والعالم.</p></div>
+        <div class="counters">
+          <div class="counter"><b>265K</b><span>متابع وقارئ</span></div>
+          <div class="counter"><b>295</b><span>مقال ومنشور</span></div>
+          <div class="counter"><b>4,531</b><span>عضو نشط</span></div>
         </div>
-        <div class="chapter">
-          <div class="num">3</div>
-          <div><h4>الومضة الأخيرة</h4><p>اللحظة التي يدرك فيها أن الضوء لم يكن خارجاً أبداً… بل كان يشتعل في الداخل.</p></div>
+        <div class="timeline">
+          <div class="tl-item"><b>2019 · البدايات الأولى</b>
+            <p>سلسلة من المقالات العميقة في فلسفة التغيير الإيجابي وبناء الذات.</p>
+          </div>
+          <div class="tl-item"><b>2021 · مائة ألف صوت</b>
+            <p>نقطة التحول الكبرى في الرحلة الرقمية، حيث تلاقت الكلمات مع عقول القراء.</p>
+          </div>
+          <div class="tl-item"><b>2023 · جائزة التميز الأدبي</b>
+            <p>تكريم مستحق في المحافل الثقافية الوطنية تقديراً للتأثير الفكري.</p>
+          </div>
+          <div class="tl-item"><b>2025 · إصدار رواية «الأمل»</b>
+            <p>المولود الأدبي الأول، إشراقة دار السهوب التي تجسد خلاصة الفكر والدراما.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===== Testimonials ===== -->
-<section id="testimonials">
-  <div class="sec-head reveal">
-    <span class="kicker">✦ آراء القراء ✦</span>
-    <h2>ماذا قال <em>القراء</em>؟</h2>
-    <p>تجارب حقيقية غيّرت نظرتهم للحياة</p>
-    <div class="divider"></div>
-  </div>
-  <div class="t-grid">
-    <div class="t-card reveal">
-      <span class="t-badge">✓ مشترٍ موثّق</span>
-      <div class="stars">★★★★★</div>
-      <p>«أنهيت الرواية في جلسة واحدة ولم أستطع النوم بعدها. كأن أحدهم قرأ ما في داخلي وكتبه بأجمل مما كنت أتخيل. هذه ليست رواية، هذا دواء للروح.»</p>
-      <div class="t-who"><div class="t-ava">أ</div><div><b>أمين بوقرة</b><span>الجزائر العاصمة · قارئ منذ 2021</span></div></div>
+  <!-- ===== About Book ===== -->
+  <section id="book">
+    <div class="sec-head reveal">
+      <span class="kicker">✦ الكتاب ✦</span>
+      <h2>لماذا <em>«الكتاب----»</em>؟</h2>
+      <p>أكثر من مجرد رواية… تجربة تأملية تأخذك في رحلة داخل الذات</p>
+      <div class="divider"></div>
     </div>
-    <div class="t-card reveal">
-      <span class="t-badge">✓ مشترٍ موثّق</span>
-      <div class="stars">★★★★★</div>
-      <p>«أهديتها لأخي الذي كان يمر بمرحلة صعبة، فاتصل بي باكياً بعد أسبوع. قال لي: "هذه الكلمة وصلتني في الوقت الذي احتجتها فيه بالضبط". شكراً رحيم.»</p>
-      <div class="t-who"><div class="t-ava">س</div><div><b>سارة مزياني</b><span>وهران · معلّمة لغة عربية</span></div></div>
-    </div>
-    <div class="t-card reveal">
-      <span class="t-badge">✓ مشترٍ موثّق</span>
-      <div class="stars">★★★★★</div>
-      <p>«أسلوب درامي مبهر وفلسفة عميقة بلا افتعال. كل فصل ينتهي بومضة تُبقيك متشوقاً للفصل التالي. اشتريت ثلاث نسخ: لي، ولأمي، ولأعز صديق.»</p>
-      <div class="t-who"><div class="t-ava">ي</div><div><b>يوسف حمداني</b><span>قسنطينة · طالب طب</span></div></div>
-    </div>
-    <div class="t-card reveal">
-      <span class="t-badge">✓ مشترٍ موثّق</span>
-      <div class="stars">★★★★★</div>
-      <p>«أتابع كتابات الكاتب منذ سنوات، لكن «ومضة» تجاوزت كل توقعاتي. جودة الطباعة فاخرة، والإهداء المكتوب بخط يده لمسة إنسانية لا تُقدّر بثمن.»</p>
-      <div class="t-who"><div class="t-ava">ن</div><div><b>نور الهدى عثماني</b><span>سطيف · مدوّنة أدبية</span></div></div>
-    </div>
-    <div class="t-card reveal">
-      <span class="t-badge">✓ مشترٍ موثّق</span>
-      <div class="stars">★★★★★</div>
-      <p>«كنت أظن أن كتب التنمية البشرية كلها مكررة… حتى قرأت هذه الرواية. سردٌ يشدّك وفكرة تحرّكك. أنصح بها كل من فقد شرارة الحماس في حياته.»</p>
-      <div class="t-who"><div class="t-ava">م</div><div><b>محمد لعمامرة</b><span>عنابة · رائد أعمال</span></div></div>
-    </div>
-    <div class="t-card reveal">
-      <span class="t-badge">✓ مشترٍ موثّق</span>
-      <div class="stars">★★★★★</div>
-      <p>«كتابة رحيم دائماً لها نكهة خاصة، لكن هنا بلغت ذروتها. اقتبست منه أكثر من عشرين مقولة في دفتري الخاص. وأنتظر الإصدار القادم بفارغ الصبر!»</p>
-      <div class="t-who"><div class="t-ava">ل</div><div><b>ليندة مرابط</b><span>تلمسان · صحفية</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Order ===== -->
-<section id="order">
-  <div class="order-grid">
-    <div class="order-info reveal">
-      <span class="kicker" style="color:var(--gold);letter-spacing:4px;font-size:13px;font-weight:700">✦ اطلب الآن ✦</span>
-      <h2>احصل على <em>«ومضة»</em><br>قبل نفاد الطبعة الأولى</h2>
-      <p>اطلب نسختك الآن وسنصلها إليك أينما كنت، مع إهداء مميّز بخط يد الكاتب.</p>
-      <div class="order-price">
-        <span class="now">1,200 دج</span>
-        <span class="old">1,800 دج</span>
-        <span class="off">خصم 33%</span>
+    <div class="book-grid">
+      <div class="reveal">
+        <div class="excerpt-card">
+          <h3>الأمل من بين السطور</h3>
+          <p>«في لحظة الصمت تلك، أدرك أن النور لا يأتي ممن حولنا… بل من تلك الالأمل الصغيرة التي تشتعل في داخلنا كلما
+            آمنّا بأن الغد يستحق أن نُضيئه. لم يكن الطريق طويلاً، كان فقط ينتظر من يجرؤ على أخذ الخطوة الأولى.»</p>
+        </div>
+        <div class="book-feats">
+          <span class="feat"><i></i> 240 صفحة فاخرة</span>
+          <span class="feat"><i></i> غلاف مقوّى</span>
+          <span class="feat"><i></i> ورق شاموا ممتاز</span>
+          <span class="feat"><i></i> إهداء مميّز للكاتب</span>
+        </div>
       </div>
-      <ul class="perks">
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> توصيل سريع لجميع الولايات (48 ولاية)</li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> الدفع عند الاستلام — بدون أي مخاطرة</li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> إهداء مميّز بخط يد الكاتب رحيم سيوان</li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> تغليف فاخر يحمي الكتاب أثناء الشحن</li>
-        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> إرجاع مجاني خلال 7 أيام إن لم يعجبك</li>
-      </ul>
+      <div class="reveal">
+        <h3 style="font-size:26px;margin-bottom:8px">ماذا ستجد داخل الكتاب؟</h3>
+        <p style="color:var(--muted)">ثلاثة أبواب تأخذك من الظلام إلى الالأمل…</p>
+        <div class="chapters">
+          <div class="chapter">
+            <div class="num">1</div>
+            <div>
+              <h4>العتمة الأولى</h4>
+              <p>رحلة البطل في متاهة اليومي، حيث تتلاشى الأحلام وتُمحى المعاني.</p>
+            </div>
+          </div>
+          <div class="chapter">
+            <div class="num">2</div>
+            <div>
+              <h4>حين يتكلم الصدى</h4>
+              <p>لقاءاتٌ غيّرت كل شيء؛ حكم وفلسفات تُعيد تشكيل النظر إلى الذات والعالم.</p>
+            </div>
+          </div>
+          <div class="chapter">
+            <div class="num">3</div>
+            <div>
+              <h4>الالأمل الأخيرة</h4>
+              <p>اللحظة التي يدرك فيها أن الضوء لم يكن خارجاً أبداً… بل كان يشتعل في الداخل.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <form class="order-form reveal" id="orderForm">
-      <h3>نموذج الطلب</h3>
-      <p class="sub">املأ البيانات وسنتصل بك للتأكيد خلال 24 ساعة</p>
-      <div class="f-row">
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section id="testimonials">
+    <div class="sec-head reveal">
+      <span class="kicker">✦ آراء القراء ✦</span>
+      <h2>ماذا قال <em>القراء</em>؟</h2>
+      <p>تجارب حقيقية غيّرت نظرتهم للحياة</p>
+      <div class="divider"></div>
+    </div>
+    <div class="t-grid">
+      <div class="t-card reveal">
+        <span class="t-badge">✓ مشترٍ موثّق</span>
+        <div class="stars">★★★★★</div>
+        <p>«أنهيت الرواية في جلسة واحدة ولم أستطع النوم بعدها. كأن أحدهم قرأ ما في داخلي وكتبه بأجمل مما كنت أتخيل. هذه
+          ليست رواية، هذا دواء للروح.»</p>
+        <div class="t-who">
+          <div class="t-ava">أ</div>
+          <div><b>أمين بوقرة</b><span>الجزائر العاصمة · قارئ منذ 2021</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <span class="t-badge">✓ مشترٍ موثّق</span>
+        <div class="stars">★★★★★</div>
+        <p>«أهديتها لأخي الذي كان يمر بمرحلة صعبة، فاتصل بي باكياً بعد أسبوع. قال لي: "هذه الكلمة وصلتني في الوقت الذي
+          احتجتها فيه بالضبط". شكراً رحيم.»</p>
+        <div class="t-who">
+          <div class="t-ava">س</div>
+          <div><b>سارة مزياني</b><span>وهران · معلّمة لغة عربية</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <span class="t-badge">✓ مشترٍ موثّق</span>
+        <div class="stars">★★★★★</div>
+        <p>«أسلوب درامي مبهر وفلسفة عميقة بلا افتعال. كل فصل ينتهي بالأمل تُبقيك متشوقاً للفصل التالي. اشتريت ثلاث نسخ:
+          لي، ولأمي، ولأعز صديق.»</p>
+        <div class="t-who">
+          <div class="t-ava">ي</div>
+          <div><b>يوسف حمداني</b><span>قسنطينة · طالب طب</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <span class="t-badge">✓ مشترٍ موثّق</span>
+        <div class="stars">★★★★★</div>
+        <p>«أتابع كتابات الكاتب منذ سنوات، لكن «الأمل» تجاوزت كل توقعاتي. جودة الطباعة فاخرة، والإهداء المكتوب بخط يده
+          لمسة إنسانية لا تُقدّر بثمن.»</p>
+        <div class="t-who">
+          <div class="t-ava">ن</div>
+          <div><b>نور الهدى عثماني</b><span>سطيف · مدوّنة أدبية</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <span class="t-badge">✓ مشترٍ موثّق</span>
+        <div class="stars">★★★★★</div>
+        <p>«كنت أظن أن كتب التنمية البشرية كلها مكررة… حتى قرأت هذه الرواية. سردٌ يشدّك وفكرة تحرّكك. أنصح بها كل من فقد
+          شرارة الحماس في حياته.»</p>
+        <div class="t-who">
+          <div class="t-ava">م</div>
+          <div><b>محمد لعمامرة</b><span>عنابة · رائد أعمال</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <span class="t-badge">✓ مشترٍ موثّق</span>
+        <div class="stars">★★★★★</div>
+        <p>«كتابة رحيم دائماً لها نكهة خاصة، لكن هنا بلغت ذروتها. اقتبست منه أكثر من عشرين مقولة في دفتري الخاص. وأنتظر
+          الإصدار القادم بفارغ الصبر!»</p>
+        <div class="t-who">
+          <div class="t-ava">ل</div>
+          <div><b>ليندة مرابط</b><span>تلمسان · صحفية</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Order ===== -->
+  <section id="order">
+    <div class="order-grid">
+      <div class="order-info reveal">
+        <span class="kicker" style="color:var(--gold);letter-spacing:4px;font-size:13px;font-weight:700">✦ اطلب الآن
+          ✦</span>
+        <h2>احصل على <em>«الأمل»</em><br>قبل نفاد الطبعة الأولى</h2>
+        <p>اطلب نسختك الآن وسنصلها إليك أينما كنت، مع إهداء مميّز بخط يد الكاتب. املأ النموذج وسيصلك طلبك مباشرة على
+          واتساب.</p>
+        <div class="order-price">
+          <span class="now">1,200 دج</span>
+          <span class="old">1,800 دج</span>
+          <span class="off">خصم 33%</span>
+        </div>
+        <ul class="perks">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4">
+              <path d="M20 6L9 17l-5-5" />
+            </svg> توصيل سريع لجميع الولايات (48 ولاية)</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4">
+              <path d="M20 6L9 17l-5-5" />
+            </svg> الدفع عند الاستلام — بدون أي مخاطرة</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4">
+              <path d="M20 6L9 17l-5-5" />
+            </svg> إهداء مميّز بخط يد الكاتب عزي صهيب</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4">
+              <path d="M20 6L9 17l-5-5" />
+            </svg> تغليف فاخر يحمي الكتاب أثناء الشحن</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4a24e" stroke-width="2.4">
+              <path d="M20 6L9 17l-5-5" />
+            </svg> إرجاع مجاني خلال 7 أيام إن لم يعجبك</li>
+        </ul>
+      </div>
+      <form class="order-form reveal" id="orderForm">
+        <h3>نموذج الطلب</h3>
+        <p class="sub">املأ البيانات وسيُرسل طلبك مباشرة عبر واتساب للتأكيد الفوري</p>
+        <div class="f-row">
+          <div class="field">
+            <label>الاسم الكامل *</label>
+            <input type="text" id="fName" placeholder="مثال: عزي صهيب" required>
+          </div>
+          <div class="field">
+            <label>رقم الهاتف *</label>
+            <input type="tel" id="fPhone" placeholder="0550 00 00 00" required style="direction:ltr;text-align:right">
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="field">
+            <label>الولاية *</label>
+            <select id="fWilaya" required>
+              <option value="">— اختر الولاية —</option>
+              <option>الجزائر</option>
+              <option>وهران</option>
+              <option>قسنطينة</option>
+              <option>عنابة</option>
+              <option>سطيف</option>
+              <option>تلمسان</option>
+              <option>بجاية</option>
+              <option>تيزي وزو</option>
+              <option>ورقلة</option>
+              <option>باتنة</option>
+              <option>بومرداس</option>
+              <option>أخرى</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>البلدية / العنوان</label>
+            <input type="text" id="fCity" placeholder="اسم البلدية أو الحي">
+          </div>
+        </div>
         <div class="field">
-          <label>الاسم الكامل *</label>
-          <input type="text" id="fName" placeholder="مثال: أحمد بن يوسف" required>
-        </div>
-        <div class="field">
-          <label>رقم الهاتف *</label>
-          <input type="tel" id="fPhone" placeholder="0550 00 00 00" required style="direction:ltr;text-align:right">
-        </div>
-      </div>
-      <div class="f-row">
-        <div class="field">
-          <label>الولاية *</label>
-          <select id="fWilaya" required>
-            <option value="">— اختر الولاية —</option>
-            <option>الجزائر</option><option>وهران</option><option>قسنطينة</option>
-            <option>عنابة</option><option>سطيف</option><option>تلمسان</option>
-            <option>بجاية</option><option>تيزي وزو</option><option>ورقلة</option>
-            <option>باتنة</option><option>بومرداس</option><option>أخرى</option>
+          <label>عدد النسخ</label>
+          <select id="fQty">
+            <option value="1">نسخة واحدة — 1,200 دج</option>
+            <option value="2">نسختان — 2,300 دج (وفّر 100 دج)</option>
+            <option value="3">ثلاث نسخ — 3,400 دج (وفّر 200 دج)</option>
           </select>
         </div>
         <div class="field">
-          <label>البلدية / العنوان</label>
-          <input type="text" id="fCity" placeholder="اسم البلدية أو الحي">
+          <label>ملاحظات (اختياري)</label>
+          <textarea id="fNotes" rows="2" placeholder="مثال: أريد الإهداء لشخص عزيز…"></textarea>
         </div>
-      </div>
-      <div class="field">
-        <label>عدد النسخ</label>
-        <select id="fQty">
-          <option value="1">نسخة واحدة — 1,200 دج</option>
-          <option value="2">نسختان — 2,300 دج (وفّر 100 دج)</option>
-          <option value="3">ثلاث نسخ — 3,400 دج (وفّر 200 دج)</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>ملاحظات (اختياري)</label>
-        <textarea id="fNotes" rows="2" placeholder="مثال: أريد الإهداء لشخص عزيز…"></textarea>
-      </div>
-      <div class="total-row">
-        <span>الإجمالي (مع التوصيل):</span>
-        <b id="totalPrice">1,200 دج</b>
-      </div>
-      <button type="submit" class="btn btn-gold">✔ تأكيد الطلب — الدفع عند الاستلام</button>
-      <p class="form-note">🔒 بياناتك آمنة ولن تُستخدم إلا لغرض التوصيل</p>
-    </form>
-  </div>
-</section>
-
-<!-- ===== Contact ===== -->
-<section id="contact">
-  <div class="sec-head reveal">
-    <span class="kicker">✦ تواصل معنا ✦</span>
-    <h2>نحن <em>هنا</em> من أجلك</h2>
-    <p>لأي استفسار حول الطلب أو الكتاب أو النسخ الخاصة</p>
-    <div class="divider"></div>
-  </div>
-  <div class="c-grid">
-    <a class="c-card reveal" href="tel:+213550000000">
-      <div class="c-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0c778" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 1.9.5 2.9.7a2 2 0 0 1 1.6 2z"/></svg></div>
-      <b>اتصل بنا</b><span>+213 550 00 00 00</span>
-    </a>
-    <a class="c-card reveal" href="mailto:contact@wamda.site">
-      <div class="c-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0c778" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
-      <b>البريد الإلكتروني</b><span>contact@wamda.site</span>
-    </a>
-    <div class="c-card reveal">
-      <div class="c-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0c778" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-      <b>العنوان</b><span>الجزائر · الجزائر العاصمة</span>
+        <div class="total-row">
+          <span>الإجمالي (مع التوصيل):</span>
+          <b id="totalPrice">1,200 دج</b>
+        </div>
+        <button type="submit" class="btn btn-wa" style="width:100%;justify-content:center;font-size:17px">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3z" />
+          </svg>
+          إرسال الطلب عبر واتساب
+        </button>
+        <p class="form-note">🔒 بياناتك آمنة — تُرسل مباشرة إلى واتساب الموقع فقط</p>
+      </form>
     </div>
-    <div class="c-card reveal">
-      <div class="c-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0c778" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-      <b>أوقات العمل</b><span>السبت – الخميس · 9ص – 6م</span>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <div class="sec-head reveal">
+      <span class="kicker">✦ تواصل معنا ✦</span>
+      <h2>نحن <em>هنا</em> من أجلك</h2>
+      <p>لأي استفسار حول الطلب أو الكتاب أو النسخ الخاصة</p>
+      <div class="divider"></div>
+    </div>
+    <div class="c-grid">
+      <a class="c-card reveal" href="https://wa.me/213697743721" target="_blank">
+        <div class="c-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="#f0c778">
+            <path
+              d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3z" />
+          </svg></div>
+        <b>واتساب</b><span>+213 697 74 37 21</span>
+      </a>
+      <a class="c-card reveal" href="mailto:contact@wamda.site">
+        <div class="c-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0c778"
+            stroke-width="1.8">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-10 6L2 7" />
+          </svg></div>
+        <b>البريد الإلكتروني</b><span>contact@wamda.site</span>
+      </a>
+      <div class="c-card reveal">
+        <div class="c-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0c778"
+            stroke-width="1.8">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg></div>
+        <b>العنوان</b><span>الجزائر · الجزائر العاصمة</span>
+      </div>
+      <div class="c-card reveal">
+        <div class="c-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0c778"
+            stroke-width="1.8">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 6v6l4 2" />
+          </svg></div>
+        <b>أوقات العمل</b><span>السبت – الخميس · 9ص – 6م</span>
+      </div>
+    </div>
+    <div class="socials reveal">
+      <a class="soc" href="#" aria-label="فيسبوك"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.7-1.6h1.5V3.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.7H7.8V13h2.7v8h3z" />
+        </svg></a>
+      <a class="soc" href="#" aria-label="انستغرام"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+        </svg></a>
+      <a class="soc" href="https://wa.me/213697743721" target="_blank" aria-label="واتساب"><svg width="20" height="20"
+          viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3z" />
+        </svg></a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <b>الأمل</b> · للكاتب عزي صهيب<br>
+    © 2026 WAMDA · جميع الحقوق محفوظة · الجزائر
+    <div class="dev">✦ Designed for Rahim Siouane · Developed by Innovation Team ✦</div>
+  </footer>
+
+  <!-- ===== Floating WhatsApp ===== -->
+  <a class="wa-float"
+    href="https://wa.me/213697743721?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D8%AA%D8%A7%D8%A8%20%C2%AB%D9%88%D9%85%D8%B6%D8%A9%C2%BB"
+    target="_blank" aria-label="تواصل عبر واتساب">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff">
+      <path
+        d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3z" />
+    </svg>
+  </a>
+
+  <!-- ===== Success Modal ===== -->
+  <div id="modal"
+    style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(6px);z-index:200;place-items:center;padding:20px">
+    <div
+      style="background:var(--card);border:1px solid var(--gold3);border-radius:24px;padding:44px 36px;max-width:420px;text-align:center;box-shadow:var(--shadow)">
+      <div
+        style="width:74px;height:74px;border-radius:50%;background:linear-gradient(135deg,var(--gold2),var(--gold));display:grid;place-items:center;margin:0 auto 20px;font-size:34px;color:#1a1206">
+        ✓</div>
+      <h3 style="font-size:26px;color:var(--gold2);margin-bottom:10px">تم تجهيز طلبك بنجاح!</h3>
+      <p style="color:var(--muted);margin-bottom:14px">شكراً لك <b id="mName" style="color:var(--cream)"></b>، تم فتح
+        واتساب لإرسال طلبك إلى فريقنا. اضغط «إرسال» في محادثة واتساب لإتمام الطلب.</p>
+      <p style="color:var(--muted);font-size:13px;margin-bottom:22px">أو تواصل معنا مباشرة على <b
+          style="color:#25D366;direction:ltr;display:inline-block">+213 697 74 37 21</b></p>
+      <button class="btn btn-gold" onclick="document.getElementById('modal').style.display='none'"
+        style="width:100%;justify-content:center">حسناً، شكراً</button>
     </div>
   </div>
-  <div class="socials reveal">
-    <a class="soc" href="#" aria-label="فيسبوك"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.7-1.6h1.5V3.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.7H7.8V13h2.7v8h3z"/></svg></a>
-    <a class="soc" href="#" aria-label="انستغرام"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-    <a class="soc" href="#" aria-label="تيليغرام"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6c.2-1-.7-1.7-1.6-1.4L2.7 9.7c-1 .4-1 1.8.1 2.1l4.5 1.4 1.7 5.3c.3.9 1.4 1.1 2 .5l2.4-2.3 4.6 3.4c.8.6 2 .2 2.2-.8l2.7-14.7zM8.2 12.9l8.7-5.9c.3-.2.6.2.4.4l-7.1 7.1-.3 3-1.7-4.6z"/></svg></a>
-    <a class="soc" href="#" aria-label="واتساب"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.5-.6c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.6-.3z"/></svg></a>
-  </div>
-</section>
 
-<!-- ===== Footer ===== -->
-<footer>
-  <b>ومضة</b> · للكاتب رحيم سيوان<br>
-  © 2026 WAMDA · جميع الحقوق محفوظة · الجزائر
-  <div class="dev">✦ Designed for Rahim Siouane · Developed by Innovation Team ✦</div>
-</footer>
+  <script>
+    // WhatsApp number
+    const WA_NUMBER = '213697743721';
 
-<!-- ===== Success Modal ===== -->
-<div id="modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(6px);z-index:200;place-items:center;padding:20px">
-  <div style="background:var(--card);border:1px solid var(--gold3);border-radius:24px;padding:44px 36px;max-width:420px;text-align:center;box-shadow:var(--shadow)">
-    <div style="width:74px;height:74px;border-radius:50%;background:linear-gradient(135deg,var(--gold2),var(--gold));display:grid;place-items:center;margin:0 auto 20px;font-size:34px;color:#1a1206">✓</div>
-    <h3 style="font-size:26px;color:var(--gold2);margin-bottom:10px">تم استلام طلبك بنجاح!</h3>
-    <p style="color:var(--muted);margin-bottom:24px">شكراً لك <b id="mName" style="color:var(--cream)"></b>، سنتصل بك على الرقم <b id="mPhone" style="color:var(--cream);direction:ltr;display:inline-block"></b> خلال 24 ساعة لتأكيد الطلب.</p>
-    <button class="btn btn-gold" onclick="document.getElementById('modal').style.display='none'" style="width:100%;justify-content:center">حسناً، شكراً</button>
-  </div>
-</div>
+    // Navbar scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40));
 
-<script>
-// Navbar scroll effect
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40));
+    // Mobile menu
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-// Mobile menu
-const burger = document.getElementById('burger');
-const navLinks = document.getElementById('navLinks');
-burger.addEventListener('click', () => navLinks.classList.toggle('open'));
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+    // Reveal on scroll
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Reveal on scroll
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-}, { threshold: .12 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    // Price calculator
+    const prices = { 1: 1200, 2: 2300, 3: 3400 };
+    const qtyEl = document.getElementById('fQty');
+    const totalEl = document.getElementById('totalPrice');
+    qtyEl.addEventListener('change', () => {
+      const q = +qtyEl.value;
+      totalEl.textContent = prices[q].toLocaleString('en-US') + ' دج';
+    });
 
-// Price calculator
-const prices = {1: 1200, 2: 2300, 3: 3400};
-const qtyEl = document.getElementById('fQty');
-const totalEl = document.getElementById('totalPrice');
-qtyEl.addEventListener('change', () => {
-  const q = +qtyEl.value;
-  totalEl.textContent = prices[q].toLocaleString('ar-DZ') + ' دج';
-});
+    // Order form → WhatsApp
+    document.getElementById('orderForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('fName').value.trim();
+      const phone = document.getElementById('fPhone').value.trim();
+      const wilaya = document.getElementById('fWilaya').value;
+      const city = document.getElementById('fCity').value.trim() || '—';
+      const qty = qtyEl.options[qtyEl.selectedIndex].text;
+      const notes = document.getElementById('fNotes').value.trim() || '—';
+      const total = totalEl.textContent;
+      if (!name || !phone || !wilaya) return;
 
-// Order form submit
-document.getElementById('orderForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const name = document.getElementById('fName').value.trim();
-  const phone = document.getElementById('fPhone').value.trim();
-  if (!name || !phone) return;
-  document.getElementById('mName').textContent = name;
-  document.getElementById('mPhone').textContent = phone;
-  document.getElementById('modal').style.display = 'grid';
-  e.target.reset();
-  qtyEl.value = '1';
-  totalEl.textContent = '1,200 دج';
-});
-</script>
+      const msg = [
+        '🌟 طلب جديد من موقع «الأمل»',
+        '━━━━━━━━━━━━━━━',
+        '👤 الاسم: ' + name,
+        '📱 الهاتف: ' + phone,
+        '📍 الولاية: ' + wilaya,
+        '🏘️ البلدية: ' + city,
+        '📚 العرض: ' + qty,
+        '💰 الإجمالي: ' + total,
+        '📝 ملاحظات: ' + notes,
+        '━━━━━━━━━━━━━━━',
+        '✅ الدفع عند الاستلام'
+      ].join('\n');
+
+      window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
+
+      document.getElementById('mName').textContent = name;
+      document.getElementById('modal').style.display = 'grid';
+      e.target.reset();
+      qtyEl.value = '1';
+      totalEl.textContent = '1,200 دج';
+    });
+  </script>
 </body>
+
 </html>
